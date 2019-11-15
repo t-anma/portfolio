@@ -16,7 +16,7 @@ body {
   border-style: solid;
   border-width: 5px;
   border-color: Black;
-  width: 100;
+  width: 100%;
 }
 .color-text {
   color: rgba(0,0,255,.5);
