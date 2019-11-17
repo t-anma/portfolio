@@ -1,0 +1,56 @@
+h1 {
+  color: purple;
+  border-style: solid;
+  border-width: 5px;
+  border-color: Black;
+  width: 75%;
+}
+p.important {
+  width: 75%;
+}
+p {
+  color: black;
+}
+body {
+  background-color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-color: Black;
+  width: 100%;
+}
+.color-text {
+  color: rgba(0,0,255,.5);
+}
+.important{
+  color: purple;
+  font-weight: bold;
+}
+.semi-important{
+  color: blue;
+  font-weight: bold;
+}
+.white-text{
+  color: white;
+  background-color: blue;
+  padding: 1rem;
+}
+#lead-paragraph{
+  color: purple;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 5px;
+  border-color: Black;
+  width: 75%;
+}
+.important:hover {
+  background-color: #00000F;
+  color: white;
+}
+img {
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+}
+a {
+  color: hotpink;
+}
