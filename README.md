@@ -1,9 +1,6 @@
 # portfolio
 ## Assignments for UW's Introduction to Git & HTML online class:
-### Lesson 3:
-#### Added in CSS style sheet complete with 50 lines of code that was then referenced in the two portfolio pages from Assignment 2 (home page and about me page).
-### Lesson 2:
-#### In the index.html file, you will find my completed landing page for the portfolio complete with 2 links in the nav, a list of projects with images and links, and use of the header, article, and footer elements.
+
 #### In the about_me.html file, you will find my second page for the portfolio website complete with information about me.
 ##### by Angela Martin, angelalmartin98@gmail.com
 
