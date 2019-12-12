@@ -1,9 +1,16 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 h1 {
+  font-family: 'Calistoga', cursive;
   color: purple;
   border-style: solid;
   border-width: 5px;
   border-color: Black;
   width: 75%;
+  font-style: oblique;
+  font-size: 200%;
 }
 p.important {
   width: 75%;
@@ -29,8 +36,8 @@ body {
   color: blue;
   font-weight: bold;
 }
-.white-text{
-  color: white;
+.color-text{
+  color: purple;
   background-color: blue;
   padding: 1rem;
 }
@@ -53,4 +60,27 @@ img {
 }
 a {
   color: hotpink;
+}
+
+.Box {
+  font-family: 'Calistoga', cursive;
+  height: 300px;
+  width: 300px;
+  border: 30px solid purple;
+  background: yellow;
+  text-align: center;
+}
+
+.container {
+  height: 400px;
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  color: blue;
 }
