@@ -1,23 +1,23 @@
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: monospace;
 }
 
 h1 {
-  font-family: 'Calistoga', cursive;
   color: purple;
   border-style: solid;
   border-width: 5px;
   border-color: Black;
   width: 75%;
-  font-style: oblique;
-  font-size: 200%;
 }
+
 p.important {
   width: 75%;
 }
+
 p {
   color: black;
 }
+
 body {
   background-color: white;
   border-style: solid;
@@ -25,22 +25,27 @@ body {
   border-color: Black;
   width: 100%;
 }
+
 .color-text {
   color: rgba(0,0,255,.5);
 }
+
 .important{
   color: purple;
   font-weight: bold;
 }
+
 .semi-important{
   color: blue;
   font-weight: bold;
 }
-.color-text{
-  color: purple;
+
+.white-text{
+  color: white;
   background-color: blue;
   padding: 1rem;
 }
+
 #lead-paragraph{
   color: purple;
   font-weight: bold;
@@ -49,63 +54,109 @@ body {
   border-color: Black;
   width: 75%;
 }
+
 .important:hover {
   background-color: #00000F;
   color: white;
 }
+
 img {
   border-style: solid;
   border-color: black;
   border-width: 3px;
 }
+
 a {
   color: hotpink;
-  transition-property: font-size;
-  transition-duration: 2s;
-  transition-timing-function: ease-out;
-  transition-delay: 0s;
 }
 
-a:hover{
-  color: green;
-  font-size: 200%;
+/* Contact Page's Input Form Styling */
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem;
+  padding-bottom: 1rem;
 }
 
-section:hover {
-  border: 3px solid green;
-}
-
-.Box {
-  font-family: 'Calistoga', cursive;
-  height: 300px;
-  width: 300px;
-  border: 30px solid purple;
-  background: yellow;
-  text-align: center;
-  transition: width 1s, height 1s, background-color 2s, transform 2s;
-}
-
-.Box:hover {
-    background-color: white;
-    width: 250px;
-    height: 250px;
-    transform: rotate(360deg);
-}
-
-.container {
-  height: 400px;
+input[type=submit] {
+  width: 25%;
   background-color: pink;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
+}
+input[type=password]:focus {
+  background-color: seagreen;
+  outline: none;
 }
 
-.icon {
-  color: blue;
+input {
+  border-radius: 15px;
 }
 
-li:nth-child(odd) {
-    color: purple;
+fieldset {
+  border: none;
+}
+
+fieldset input {
+  display: inline;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: gray;
+}
+
+.checkbox label:hover input ~ .checkmark {
+  background-color: darkgray;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: hotpink;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

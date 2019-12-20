@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+  <body>
+    <header>
+      <h1>Contact Me!</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about_me.html">About Me</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2> Contact Form</h2>
+
+  <!--Input method 1: Simple Text-->
+      <form method="GET">
+        <label>Your name:
+          <input type="text" name="applicantName">
+        </label>
+
+        <label> Your email:
+          <input type="email" name="applicantEmail">
+        </label>
+
+<!--Input method 2: Number-->
+        <label> Your phone number:
+          <input type="number" name="applicantEmail">
+        </label>
+
+<!--Input method 3: Text Area-->
+        <label>What's up? (reason for contact)
+          <textarea name="applicationReason" rows="4" cols="50">Because I...</textarea>
+        </label>
+
+<!--Input method 4: Radio-->
+        <fieldset>
+          <legend>Are you interested in commissioning artwork?</legend>
+          <label>
+            <input type="radio" name="special" value="yes">
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="special" value="no">
+            No
+          </label>
+        </fieldset>
+
+  <!--Input method 5: Checkboxes-->
+        <fieldset class ="checkbox">
+          <legend>If yes, what type of artwork are you interested in?</legend>
+          <label>UX Desgin
+            <input type="checkbox" name="type" value="dogs">
+            <span class="checkmark"></span>
+          </label>
+          <label>Graphic Design
+            <input type="checkbox" name="type" value="cats">
+            <span class="checkmark"></span>
+          </label>
+          <label>Classical Arts (painting, drawing, etc.)
+            <input type="checkbox" name="type" value="cats">
+            <span class="checkmark"></span>
+          </label>
+          <label>Other
+            <input type="checkbox" name="type" value="cats">
+            <span class="checkmark"></span>
+          </label>
+        </fieldset>
+
+  <!--Input method 6: Drop Down-->
+        <label>How would you like to be contacted?
+          <select name="hours">
+            <option value=""> Please select</option>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="bird">Carrier Pigeon</option>
+            <option value="smoke">Smoke signals</option>
+          </select>
+        </label>
+
+  <!--Input method 7: Password-->
+        <label>Tell me a secret (it's also your password):
+          <input type="password" name="accountPW">
+        </label>
+
+        <input type="submit" value="Send!">
+      </form>
+    </section>
+  </body>
+</html>
