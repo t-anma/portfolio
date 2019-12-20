@@ -60,6 +60,19 @@ img {
 }
 a {
   color: hotpink;
+  transition-property: font-size;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+}
+
+a:hover{
+  color: green;
+  font-size: 200%;
+}
+
+section:hover {
+  border: 3px solid green;
 }
 
 .Box {
@@ -69,6 +82,14 @@ a {
   border: 30px solid purple;
   background: yellow;
   text-align: center;
+  transition: width 1s, height 1s, background-color 2s, transform 2s;
+}
+
+.Box:hover {
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    transform: rotate(360deg);
 }
 
 .container {
@@ -83,4 +104,8 @@ a {
 
 .icon {
   color: blue;
+}
+
+li:nth-child(odd) {
+    color: purple;
 }
